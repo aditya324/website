@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Test</title>
+  <style>
+    .div-wrapper {
+      width: 300px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+      border: 1px solid black;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="div-wrapper">Click me!</div>
+
+  <script>
+    // Log to ensure the script is loaded
+    console.log("Script loaded");
+    
+    // Select the element
+    const divElement = document.querySelector('.div-wrapper');
+    console.log("divElement:", divElement);
+    
+    if (divElement) {
+      divElement.addEventListener('click', function() {
+        alert('Div clicked!');
+      });
+    } else {
+      console.error("Could not find element with class 'div-wrapper'");
+    }
+  </script>
+</body>
+</html>

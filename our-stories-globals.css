@@ -1,0 +1,80 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700,600");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.text-wrapper a{
+  color: #44433f;
+}
+.image-container {
+  width: 300px; /* Set your preferred width */
+  height: 300px; /* Set your preferred height */
+  overflow: hidden; /* Hide overflow to prevent spilling */
+  border-radius: 10px; /* Optional - to add rounded corners */
+  display: inline-block; /* Keeps the container inline */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; /* Smooth transition for zoom */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Zoom in effect */
+}
+
+.image-container img:not(:hover) {
+  transform: scale(1); /* Zoom out effect */
+}
+
+.image-container-group {
+  width: 300px; /* Set the container width */
+  height: 300px; /* Set the container height */
+  overflow: hidden; /* Prevents the zoomed image from spilling outside */
+  border-radius: 10px; /* Optional - adds rounded corners */
+  display: inline-block; /* Keeps it inline */
+}
+
+.image-container-group img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+/* .image-container-group:hover img {
+  transform: scale(1.1); 
+   Zoom-in effect 
+} */
+
+.image-container-group img:not(:hover) {
+  transform: scale(1); /* Zoom-out effect */
+}
+
+.image-container-group:hover img {
+  transform: rotate(5deg) scale(1.05); /* Rotation and slight zoom */
+}
+
+
+
+
+
+
+
+
+
