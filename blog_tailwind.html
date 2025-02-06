@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <!-- Import Quicksand font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Apply Quicksand font to the body -->
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+        background-color: #f7f4ea;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="xl:max-w-[70vw] mx-auto px-4 py-8">
+      <!-- Main centered container -->
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="font-bold text-4xl md:text-5xl lg:text-[90px] leading-[60px] md:leading-[120px] text-center md:text-left">
+          Latest Blogs
+        </p>
+        <img
+          src="./blog_img/Group 1000001936.png"
+          alt=""
+          class="mt-6 md:mt-0 w-48 md:w-auto lg:block md:block hidden"
+        />
+      </div>
+
+      <!-- Grid for blog posts -->
+      <div class="w-full mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-10">
+        <!-- Blog Post 1 -->
+        <div>
+          <img src="./blog_img/image.png" alt="" class="w-full h-auto" />
+          <p class="font-bold text-xl sm:text-[24px] leading-[28px] sm:leading-[30px] mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden sm:block" /> Quasi, sunt.
+          </p>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="pt-0 sm:pt-40">
+          <img src="./blog_img/image (3).png" alt="" class="w-full h-auto" />
+          <p class="font-bold text-xl sm:text-[24px] leading-[28px] sm:leading-[30px] mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden sm:block" /> Quasi, sunt.
+          </p>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div>
+          <img src="./blog_img/image-3.png" alt="" class="w-full h-auto" />
+          <p class="font-bold text-xl sm:text-[24px] leading-[28px] sm:leading-[30px] mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden sm:block" /> Quasi, sunt.
+          </p>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="pt-0 sm:pt-40">
+          <img src="./blog_img/image-2.png" alt="" class="w-full h-auto" />
+          <p class="font-bold text-xl sm:text-[24px] leading-[28px] sm:leading-[30px] mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden sm:block" /> Quasi, sunt.
+          </p>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div>
+          <img src="./blog_img/mask-group.png" alt="" class="w-full h-auto" />
+          <p class="font-bold text-xl sm:text-[24px] leading-[28px] sm:leading-[30px] mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden sm:block" /> Quasi, sunt.
+          </p>
+        </div>
+
+        <!-- Blog Post 6 -->
+        <div class="pt-0 sm:pt-40">
+          <img src="./blog_img/image-4.png" alt="" class="w-full h-auto" />
+          <p class="font-bold text-xl sm:text-[24px] leading-[28px] sm:leading-[30px] mt-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br class="hidden sm:block" /> Quasi, sunt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
