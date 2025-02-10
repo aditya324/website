@@ -16,13 +16,29 @@
         font-family: "Quicksand", sans-serif;
         background-color: #f7f4ea;
       }
+
+      .placeholder-custom::placeholder {
+        font-size: 1.25rem; /* Adjust this value as needed */
+        color: #6b7280; /* Optional: Adjust placeholder text color */
+        margin-bottom: 25px;
+      }
       /* Ensure the paragraph is limited to 3 lines */
+      .placeholder-message::placeholder {
+        font-size: 1.5rem; /* Adjust this value as needed */
+        color: #6b7280; /* Optional: Adjust placeholder text color */
+        line-height: 1.2; /* Adjust line height to move text higher */
+        padding-bottom: 100px; /* Adjust padding to fine-tune vertical position */
+      }
+      textarea::placeholder {
+    color: #999; /* Adjust the color as needed */
+    opacity: 1; /* Ensure full visibility */
+}
     </style>
   </head>
   <body>
     <!-- Container -->
     <div
-      class="xl:max-w-[90vw] mx-auto lg:px-4 md:px-8 px-5 py-8 text-[#44433F]"
+      class="xl:max-w-[70vw] mx-auto lg:px-4 md:px-8 px-5 py-8 text-[#44433F]"
     >
       <div class="mx-auto px-4 py-8">
         <div class="">
@@ -105,12 +121,14 @@
 
         <div class="flex pl-2 mt-5 gap-2 lg:flex-row flex-col">
           <img
-            class="lg:w-[639px] lg:h-[455px]"
+            class="w-full lg:w-[50%] xl:w-[639px] xl:h-[455px]"
             src="our-stories-img/mask-group.png"
+            alt="Image 1"
           />
           <img
-            class="lg:w-[639px] lg:h-[455px]"
+            class="w-full lg:w-[50%] lg:h-[455px]"
             src="our-stories-img/mask-group-1.png"
+            alt="Image 2"
           />
         </div>
         <div class="px-4 md:px-6">
@@ -150,24 +168,13 @@
 
       <div class="flex flex-col gap-12 pt-20 md:flex-row md:justify-center">
         <!-- Mission Card -->
-        <div
-          class="w-full md:w-[608px] h-auto md:h-[302px] bg-[#44433F] rounded-[55px] p-5 relative"
-        >
-          <div
-            class="text-white flex flex-col justify-start items-start pt-8 pl-8"
-          >
-            <!-- On small screens, text-3xl and text-base are used. On md screens, the specified sizes are applied -->
-            <h1
-              class="font-semibold text-3xl md:text-[49.8px] md:leading-[62.5px] lg:text-start text-center"
-            >
+        <div class="w-full md:w-[608px] min-h-[302px] bg-[#44433F] rounded-[55px] p-5 relative">
+          <div class="text-white flex flex-col justify-start items-start pt-8 pl-8">
+            <h1 class="font-semibold text-3xl md:text-[49.8px] md:leading-[62.5px] lg:text-start text-center">
               Mission:
             </h1>
-            <p
-              class="font-light text-base md:text-[24px] md:leading-[30px] mt-4"
-            >
-              To create meaningful, lasting impacts through media and
-              advertising, driven by passion, creativity, and a commitment to
-              digital excellence.
+            <p class="font-light text-base md:text-[24px] md:leading-[30px] mt-4">
+              To create meaningful, lasting impacts through media and advertising, driven by passion, creativity, and a commitment to digital excellence.
             </p>
           </div>
           <!-- Arrow Icon -->
@@ -175,25 +182,15 @@
             <img src="./our-stories-img/Group 1000001913.png" />
           </div>
         </div>
-
+      
         <!-- Vision Card -->
-        <div
-          class="w-full md:w-[608px] h-auto md:h-[302px] bg-[#44433F] rounded-[55px] p-5 relative"
-        >
-          <div
-            class="text-white flex flex-col justify-start items-start pt-8 pl-8"
-          >
-            <h1
-              class="font-semibold text-3xl md:text-[49.8px] md:leading-[62.5px]"
-            >
+        <div class="w-full md:w-[608px] min-h-[302px] bg-[#44433F] rounded-[55px] p-5 relative">
+          <div class="text-white flex flex-col justify-start items-start pt-8 pl-8">
+            <h1 class="font-semibold text-3xl md:text-[49.8px] md:leading-[62.5px]">
               Vision:
             </h1>
-            <p
-              class="font-light text-base md:text-[24px] md:leading-[30px] mt-4"
-            >
-              To be the trusted digital partner that drives growth, practices
-              ethics, and prioritizes clients, delivering solutions that empower
-              communities and enrich lives.
+            <p class="font-light text-base md:text-[24px] md:leading-[30px] mt-4">
+              To be the trusted digital partner that drives growth, practices ethics, and prioritizes clients, delivering solutions that empower communities and enrich lives.
             </p>
           </div>
           <div class="absolute -right-5 -bottom-10 lg:block md:hidden hidden">
@@ -260,7 +257,7 @@
       </div>
 
       <div
-        class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1  mt-20 overflow-hidden"
+        class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-20 overflow-hidden"
       >
         <img
           src="./blog_img/WhatsApp Image 2024-12-30 at 6.20.35 PM 1.png"
@@ -299,27 +296,129 @@
           Meet the Sunrisers
         </h1>
         <p class="font-light text-[32px] leading-[40px] text-center mb-5">
-          We’re not just colleagues—we’re a tribe of <span class="font-semibold">creative thinkers,
-            go-getters, and dreamers</span> who work hard and dream bigger. From just a
-          handful of clients in 2017, we’ve grown into a global powerhouse with
-          over <span class="font-semibold">50 smart minds</span> working relentlessly to set new benchmarks.
+          We’re not just colleagues—we’re a tribe of
+          <span class="font-semibold"
+            >creative thinkers, go-getters, and dreamers</span
+          >
+          who work hard and dream bigger. From just a handful of clients in
+          2017, we’ve grown into a global powerhouse with over
+          <span class="font-semibold">50 smart minds</span> working relentlessly
+          to set new benchmarks.
         </p>
-        <img src="./our-stories-img/image.png" alt="">
+        <img src="./our-stories-img/image.png" alt="" />
         <p class="font-light text-[32px] leading-[40px] text-center mt-3">
-          Every <span class="font-semibold">single moment counts</span>, and every achievement drives us to shine brighter. Together, we innovate, create, and elevate brands to new heights.
+          Every <span class="font-semibold">single moment counts</span>, and
+          every achievement drives us to shine brighter. Together, we innovate,
+          create, and elevate brands to new heights.
         </p>
       </div>
 
+      <div
+        class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-10 w-full justify-center gap-10"
+      >
+        <div
+          class="border-[#44433F] border-2 p-5 rounded-[55px] text-center font-bold text-[#44433F] text-[32px] leading-[40px]"
+        >
+          We are a Team
+        </div>
+        <div
+          class="border-[#44433F] border-2 p-5 rounded-[55px] text-center font-bold text-[#44433F] text-[32px] leading-[40px]"
+        >
+          We are a Family
+        </div>
+        <div
+          class="border-[#44433F] border-2 p-5 rounded-[55px] text-center font-bold text-[#44433F] text-[32px] leading-[40px]"
+        >
+          We are a Sunrise
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row mt-10">
+        <!-- Text Section -->
+        <div class="flex-1 md:pr-8 order-2 md:order-1">
+          <h1
+            class="font-bold text-[32px] md:text-[48px] leading-[40px] md:leading-[60px]"
+          >
+            What We Do
+          </h1>
+          <p
+            class="font-normal text-[18px] md:text-[24px] leading-[28px] md:leading-[40px] mt-5"
+          >
+            We're a full-service creative agency dedicated to:
+          </p>
+          <ul
+            class="list-disc pl-5 font-normal text-[18px] md:text-[24px] leading-[28px] md:leading-[40px] ml-5 mt-5"
+          >
+            <li>Understanding your goals as if they were our own.</li>
+            <li>Designing strategies that drive measurable results.</li>
+            <li>Accelerating your online growth and maximizing ROI.</li>
+          </ul>
+          <p
+            class="font-normal text-[18px] md:text-[24px] leading-[28px] md:leading-[30px] mt-5"
+          >
+            We don’t just follow trends; we set them. Our strength lies in
+            adapting—creating digital marketing experiences that match the
+            evolving needs of your business and customers.
+          </p>
+          <p
+            class="font-normal text-[18px] md:text-[24px] leading-[28px] md:leading-[30px] mt-5"
+          >
+            From content creation to result-driven campaigns, we don’t stop
+            until we deliver <span class="font-bold">wow-worthy results</span>.
+          </p>
+        </div>
 
-      <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 mt-10 w-full items-center" >
-        <div class="">
-          we are a team 
+        <!-- Image Section -->
+        <div
+          class="flex-1 flex justify-center md:justify-end order-1 md:order-2 mb-8 md:mb-0"
+        >
+          <img
+            src="./our-stories-img/WhatsApp Image 2024-12-30 at 6.05.04 PM 1.png"
+            class="rounded-[55px] w-full md:w-auto max-w-full"
+          />
         </div>
-        <div>
-          we are a family 
+      </div>
+      <div
+        class="bg-[#FFA314] rounded-[55px] h-auto md:h-[601px] flex flex-col md:flex-row p-6 md:p-10 justify-center mt-20"
+      >
+        <!-- Text Section -->
+        <div class="w-full md:w-1/2 text-start md:text-left mb-8 md:mb-0">
+          <h1
+            class="font-bold text-[40px] md:text-[48px] leading-[45px] md:leading-[60px]"
+          >
+            Join Us in Writing the
+          </h1>
+          <h1
+            class="font-bold text-[36px] md:text-[48px] leading-[45px] md:leading-[60px]"
+          >
+            Next Chapter
+          </h1>
+          <p
+            class="mt-4 text-[18px] md:text-[24px] leading-[24px] md:leading-[30px]"
+          >
+            Every brand has a story to tell, and <br class="hidden md:block" />
+            we’re here to help you tell it right. <br class="hidden md:block" />
+            Let’s work together to create something unforgettable.
+          </p>
         </div>
-        <div>
-          we are a sunrise 
+
+        <!-- Form Section -->
+        <div class="w-full md:w-1/2 flex flex-col gap-4 md:gap-8">
+          <input
+            type="text"
+            class="bg-[#F7F4EA] p-3 md:p-5 rounded-full w-full placeholder-custom"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            class="bg-[#F7F4EA] p-3 md:p-5 rounded-full w-full placeholder-custom"
+            placeholder="Email"
+          />
+          <textarea placeholder="message" class="bg-[#F7F4EA] p-3 md:p-5 rounded-[55px] w-full placeholder-message overflow-hidden " rows="5"></textarea>
+          <button
+            class="border-[#44433F] border-2 p-3 md:p-5 rounded-[55px] w-full text-center font-bold text-[#44433F] text-[24px] md:text-[32px] leading-[30px] md:leading-[40px]"
+          >
+            Get A Proposal
+          </button>
         </div>
       </div>
     </div>
