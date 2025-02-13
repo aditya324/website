@@ -14,7 +14,7 @@
     <style>
       /* Ensure logo resizes properly */
       .navbar-logo {
-        height: 80px; /* Adjust based on design */
+        height: 100px; /* Adjust based on design */
         width: auto;
       }
       .icon-size {
@@ -543,11 +543,11 @@
           <div class="mt-20 lg:px-0 md:px-10 px-5">
             <div class="bg-[#FFA314] lg:rounded-[55px] rounded-xl p-10 relative text-[#44433F]">
               <!-- Header Section -->
-              <div class="flex justify-between items-center">
-                <h1 class="font-bold text-[96px] lg:text-[96px] leading-[100px] lg:leading-[120px] text-[#44433F]">
+              <div class="flex flex-col lg:flex-row justify-between items-center">
+                <h1 class="font-bold text-4xl sm:text-6xl lg:text-[96px] leading-[50px] sm:leading-[80px] lg:leading-[120px] text-[#44433F]">
                   Trending Talks
                 </h1>
-                <button class="border-[#44433F] bg-[#f7f4ea] border-2 px-6 py-3 rounded-full font-bold text-[#44433F] text-base flex items-center cursor-pointer gap-2">
+                <button class="border-[#44433F] bg-[#f7f4ea] border-2 px-6 py-3 rounded-full font-bold text-[#44433F] text-base flex items-center cursor-pointer gap-2 mt-6 lg:mt-0">
                   <a href="/case_studies_tailwind.html">More Blogs</a>
                   <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -556,37 +556,66 @@
               </div>
           
               <!-- Blogs and Slider Section -->
-              <div class="flex flex-col lg:flex-row justify-between  w-full mt-10">
+              <div class="flex flex-col lg:flex-row justify-between w-full mt-10">
                 <!-- Blogs Section (Left) -->
                 <div class="lg:w-1/2 w-full flex flex-col">
-                  <p class="font-bold text-[96px] leading-[120px] mb-10">Blogs</p> <!-- Added mt-0 -->
-                  <p class="font-normal text-[27px] leading-[34.67px] mb-10">Big Ideas Start Here</p> <!-- Added mt-0 -->
-                  <p class="font-normal text-[27px] leading-[34.67px] lg:w-3/4 w-full mt-0"> <!-- Added mt-0 -->
+                  <p class="font-bold text-4xl sm:text-6xl lg:text-[96px] leading-[50px] sm:leading-[80px] lg:leading-[120px] mb-6 lg:mb-10">
+                    Blogs
+                  </p>
+                  <p class="font-normal text-xl sm:text-2xl lg:text-[27px] leading-[30px] sm:leading-[34.67px] mb-6 lg:mb-10">
+                    Big Ideas Start Here
+                  </p>
+                  <p class="font-normal text-xl sm:text-2xl lg:text-[27px] leading-[30px] sm:leading-[34.67px] lg:w-3/4 w-full">
                     From branding hacks to marketing tips, we’ve got the insider scoop for U
                   </p>
                 </div>
           
                 <!-- Slider Section (Right) -->
-                <div class="lg:w-1/2 w-full relative overflow-hidden">
+                <div class="lg:w-1/2 w-full relative overflow-hidden mt-10 lg:mt-0">
                   <div class="flex space-x-8 overflow-x-auto scrollbar-hide" id="blog-slider">
                     <!-- Slide 1 -->
-                    <div class="w-[45%] flex-shrink-0 bg-white p-3 rounded-2xl relative"> <!-- Added `relative` here -->
+                    <div class="w-full md:w-[48%] lg:w-[45%] flex-shrink-0 bg-white p-3 rounded-2xl">
                       <img src="./career_img/image-1.png" alt="How to Make Your Brand Unforgettable" class="rounded-xl object-cover w-full h-40" />
-                      <p class="text-center font-bold text-[#44433F] absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white py-2"> <!-- Added `absolute` and positioning classes -->
+                      <p class="text-center font-bold text-[#44433F] mt-3 text-lg sm:text-xl">
                         How to Make Your Brand Unforgettable
                       </p>
+                      <p class="text-sm text-[#44433F] mt-2">
+                        Discover the secrets to creating a brand that leaves a lasting impression on your audience.
+                      </p>
+                      <button class="mt-4 bg-[#FFA314] text-white px-4 py-2 rounded-full font-bold text-sm">
+                        Read More
+                      </button>
                     </div>
+          
                     <!-- Slide 2 -->
-                    <div class="w-[45%] flex-shrink-0 bg-white p-3 rounded-2xl s">
+                    <div class="w-full md:w-[48%] lg:w-[45%] flex-shrink-0 bg-white p-3 rounded-2xl">
                       <img src="blog2.jpg" alt="Performance Marketing That Actually Works" class="rounded-xl object-cover w-full h-40" />
-                      <p class="text-center font-bold text-[#44433F] mt-3">Performance Marketing That Actually Works</p>
+                      <p class="text-center font-bold text-[#44433F] mt-3 text-lg sm:text-xl">
+                        Performance Marketing That Actually Works
+                      </p>
+                      <p class="text-sm text-[#44433F] mt-2">
+                        Learn about the latest performance marketing strategies that deliver real results.
+                      </p>
+                      <button class="mt-4 bg-[#FFA314] text-white px-4 py-2 rounded-full font-bold text-sm">
+                        Read More
+                      </button>
                     </div>
+          
                     <!-- Slide 3 -->
-                    <div class="w-[45%] flex-shrink-0 bg-white p-3 rounded-2xl ">
+                    <div class="w-full md:w-[48%] lg:w-[45%] flex-shrink-0 bg-white p-3 rounded-2xl">
                       <img src="blog3.jpg" alt="SEO Strategies for 2024" class="rounded-xl object-cover w-full h-40" />
-                      <p class="text-center font-bold text-[#44433F] mt-3">SEO Strategies for 2024</p>
+                      <p class="text-center font-bold text-[#44433F] mt-3 text-lg sm:text-xl">
+                        SEO Strategies for 2024
+                      </p>
+                      <p class="text-sm text-[#44433F] mt-2">
+                        Stay ahead of the competition with these cutting-edge SEO strategies for the upcoming year.
+                      </p>
+                      <button class="mt-4 bg-[#FFA314] text-white px-4 py-2 rounded-full font-bold text-sm">
+                        Read More
+                      </button>
                     </div>
                   </div>
+          
                   <!-- Slider Navigation Buttons -->
                   <div class="flex justify-between mt-4 space-x-2">
                     <button onclick="prevSlide()" class="w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-md">
@@ -626,10 +655,10 @@
             </div>
 
             <div
-              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center mt-10"
+              class="flex flex-wrap gap-5"
             >
               <div
-                class="flex flex-col items-center justify-center w-full sm:w-[380px] lg:w-[428px] h-auto border-2 border-[#FFA314] rounded-[55px] p-6 relative mt-20"
+                class="flex flex-col items-center justify-center w-full sm:w-[380px] md:w-[320px] xl:w-[428px]  h-auto border-2 border-[#FFA314] rounded-[55px] p-6 relative mt-20"
               >
                 <div class="absolute -top-16 flex justify-center">
                   <img
@@ -653,7 +682,7 @@
               </div>
 
               <div
-                class="flex flex-col items-center justify-center w-full sm:w-[380px] lg:w-[428px] h-auto border-2 border-[#FFA314] rounded-[55px] p-6 relative mt-20"
+              class="flex flex-col items-center justify-center w-full sm:w-[380px] md:w-[320px] xl:w-[428px]  h-auto border-2 border-[#FFA314] rounded-[55px] p-6 relative mt-20"
               >
                 <div class="absolute -top-16 flex justify-center">
                   <img
@@ -677,7 +706,7 @@
               </div>
 
               <div
-                class="flex flex-col items-center justify-center w-full sm:w-[380px] lg:w-[428px] h-auto border-2 border-[#FFA314] rounded-[55px] p-6 relative mt-20"
+              class="flex flex-col items-center justify-center w-full sm:w-[380px] md:w-[320px] xl:w-[428px]  h-auto border-2 border-[#FFA314] rounded-[55px] p-6 relative mt-20"
               >
                 <div class="absolute -top-16 flex justify-center">
                   <img
@@ -747,6 +776,8 @@
               </div>
             </div>
           </div>
+        
+         
         </div>
       </div>
     </div>
@@ -754,18 +785,24 @@
 </html>
 
 <script>
-  function prevSlide() {
-    const slider = document.getElementById('blog-slider');
+  const slider = document.getElementById('blog-slider');
+
+  function nextSlide() {
+    const card = slider.querySelector('.w-full'); // Get the first card
+    const cardWidth = card.offsetWidth; // Width of the card
+    const gap = 32; // Gap between cards (2rem = 32px, as defined by `space-x-8`)
     slider.scrollBy({
-      left: -slider.offsetWidth / 2,
+      left: cardWidth + gap, // Scroll by the width of one card + the gap
       behavior: 'smooth'
     });
   }
 
-  function nextSlide() {
-    const slider = document.getElementById('blog-slider');
+  function prevSlide() {
+    const card = slider.querySelector('.w-full'); // Get the first card
+    const cardWidth = card.offsetWidth; // Width of the card
+    const gap = 32; // Gap between cards (2rem = 32px, as defined by `space-x-8`)
     slider.scrollBy({
-      left: slider.offsetWidth / 2,
+      left: -(cardWidth + gap), // Scroll back by the width of one card + the gap
       behavior: 'smooth'
     });
   }
