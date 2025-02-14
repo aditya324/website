@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Alert</title>
+    <title>Home Page</title>
     <!-- Import Quicksand font from Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
@@ -123,11 +123,106 @@
 
         <!-- Flex container for horizontal layout -->
 
+
+        <div class="relative flex gap-5 justify-center sm:relative sm:flex-row sm:gap-5 sm:items-center sm:justify-center">
+        
+          <!-- Large Screens (Same Layout) -->
+          <div class="hidden lg:flex gap-5 justify-center">
+              <!-- Card 1 -->
+              <div class="w-[296px] h-[302px] bg-[#5E4FA2] rounded-[55px] flex items-center justify-center flex-col gap-10 rotate-[-19deg] z-50">
+                  <h1 class="font-bold text-8xl text-white">8+</h1>
+                  <p class="inline-block text-3xl font-bold text-white"> years</p>
+              </div>
+              <!-- Card 2 -->
+              <div class="w-[296px] h-[302px] bg-[#D95D39] rounded-[55px] flex items-center justify-center flex-col gap-10 rotate-[19deg]">
+                  <h1 class="font-bold text-8xl text-white">250+</h1>
+                  <p class="inline-block text-3xl font-bold text-white"> clients</p>
+              </div>
+              <!-- Card 3 -->
+              <div class="w-[296px] h-[302px] bg-[#008C76] rounded-[55px] flex items-center justify-center flex-col gap-10 rotate-[-19deg]">
+                  <h1 class="font-bold text-8xl text-white">10m+</h1>
+                  <p class="inline-block text-3xl font-bold text-white"> impression</p>
+              </div>
+              <!-- Card 4 -->
+              <div class="w-[296px] h-[302px] bg-[#FFB400] rounded-[55px] flex items-center justify-center flex-col gap-10 rotate-[19deg]">
+                  <h1 class="font-bold text-8xl text-white">400+</h1>
+                  <p class="inline-block text-3xl font-bold text-white"> Projects</p>
+              </div>
+          </div>
+  
+          <!-- Medium Screens (Slightly Smaller and Centered) -->
+          <div class="hidden md:flex lg:hidden gap-3 justify-center">
+              <!-- Card 1 -->
+              <div class="w-[220px] h-[240px] bg-[#5E4FA2] rounded-[40px] flex items-center justify-center flex-col gap-6 rotate-[-15deg] z-50">
+                  <h1 class="font-bold text-6xl text-white">8+</h1>
+                  <p class="inline-block text-2xl font-bold text-white"> years</p>
+              </div>
+              <!-- Card 2 -->
+              <div class="w-[220px] h-[240px] bg-[#D95D39] rounded-[40px] flex items-center justify-center flex-col gap-6 rotate-[15deg]">
+                  <h1 class="font-bold text-6xl text-white">250+</h1>
+                  <p class="inline-block text-2xl font-bold text-white"> clients</p>
+              </div>
+              <!-- Card 3 -->
+              <div class="w-[220px] h-[240px] bg-[#008C76] rounded-[40px] flex items-center justify-center flex-col gap-6 rotate-[-15deg]">
+                  <h1 class="font-bold text-6xl text-white">10m+</h1>
+                  <p class="inline-block text-2xl font-bold text-white"> impression</p>
+              </div>
+              <!-- Card 4 -->
+              <div class="w-[220px] h-[240px] bg-[#FFB400] rounded-[40px] flex items-center justify-center flex-col gap-6 rotate-[15deg]">
+                  <h1 class="font-bold text-6xl text-white">400+</h1>
+                  <p class="inline-block text-2xl font-bold text-white"> Projects</p>
+              </div>
+          </div>
+  
+          <!-- Small Screens: Fanned Out Cards -->
+          <div class="relative flex md:hidden w-[350px] h-[250px] justify-center items-center ml-10">
+              <!-- Card 1 -->
+              <div class="absolute w-[150px] h-[180px] bg-[#5E4FA2] rounded-xl flex items-center justify-center text-white text-center 
+              rotate-[-10deg] z-10 left-0 bottom-[30%]">
+                 <div class="flex flex-col">
+                  <h1 class="text-2xl font-bold">8+</h1>
+                  <p class="inline-block text-2xl font-semibold text-white"> years</p>
+                 </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="absolute w-[150px] h-[180px] bg-[#D95D39] rounded-xl flex items-center justify-center text-white text-center 
+              rotate-[15deg] z-20 left-[40%] bottom-[25%]">
+                  <div class="flex flex-col">
+                      <h1 class="text-2xl font-bold">250+</h1>
+                      <p class="inline-block text-2xl font-semibold text-white"> clients</p>
+                  </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="absolute w-[150px] h-[180px] bg-[#008C76] rounded-xl flex items-center justify-center text-white text-center 
+              rotate-[-20deg] z-30 left-[0%] top-[55%]">
+                  <div class="flex flex-col">
+                      <h1 class="text-2xl font-bold">10m+</h1>
+                      <p class="inline-block text-2xl font-semibold text-white"> impression</p>
+                  </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="absolute w-[150px] h-[180px] bg-[#FFB400] rounded-xl flex items-center justify-center text-white text-center 
+              rotate-[10deg] z-40 left-[45%] top-[55%]">
+                  <div>
+                      <h1 class="text-2xl font-bold">400+</h1>
+                      <p class="inline-block text-2xl font-semibold text-white"> Projects</p>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+  
+      <p class="font-medium lg:text-5xl  text-center lg:mt-12 mt-28 text-[#44433F]">
+          Facts, Figures, and Fabulous Results
+      </p>
+
+
+
         <div>
           <div
-            class="flex flex-col md:flex-row justify-between items-center gap-5"
+            class="flex flex-col md:flex-row justify-between items-center gap-5 mt-10"
           >
-            <h1 class="font-bold text-[96px] text-[#44433F] leading-[120px]">
+            <h1 class="font-bold lg:text-[96px] text-xl text-[#44433F] leading-[120px]">
               Our service
             </h1>
             <button
